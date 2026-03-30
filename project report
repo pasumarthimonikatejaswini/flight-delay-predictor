@@ -1,0 +1,92 @@
+📄 PROJECT REPORT
+✈️ Flight Delay Prediction System
+1. Introduction
+Flight delays are something most people have experienced while travelling. Sometimes flights get delayed due to bad weather, technical issues, or even because the aircraft arrives late from its previous journey. These delays not only affect passengers but also create problems for airlines in managing their schedules.
+In this project, I tried to understand how machine learning can be used to predict whether a flight will be delayed or not. The idea is simple — if we have some basic information about a flight, we can use a model to predict the chances of delay.
+This project helped me connect my aerospace background with basic AI/ML concepts in a practical way.
+
+2. Problem Statement
+It is not easy to predict flight delays just by guessing, because many factors are involved. Without analyzing data, it becomes difficult to identify patterns.
+So, the main problem I worked on is:
+Predicting whether a flight will be delayed or not
+Using simple data like distance, weather, and departure delay
+Applying machine learning to make the prediction.
+
+3. Objectives
+The main objectives of this project are:
+To understand how machine learning works in real-world problems
+To create a dataset related to flight conditions
+To train a model that can predict delays
+To build a simple system where a user can give inputs and get a prediction
+
+4. Methodology
+I completed this project step by step as follows:
+4.1 Dataset Creation
+Instead of using a ready dataset, I created my own dataset in Excel. I included factors like airline, distance, weather condition, and departure delay. I tried to keep the data realistic so that the model could learn meaningful patterns.
+4.2 Data Preparation
+After creating the dataset, I saved it in CSV format so it could be used in Python. All the values were numeric because machine learning models cannot directly understand text.
+4.3 Model Selection
+I selected Logistic Regression for this project. Since the output is either “Delayed” or “Not Delayed”, this model is suitable for classification problems.
+4.4 Model Training
+Using Python and scikit-learn, I trained the model with the dataset. The model learned how different factors affect flight delays.
+4.5 Prediction System
+Finally, I created a simple Python program where the user can enter flight details. Based on those inputs, the model predicts whether the flight will be delayed or not.
+
+5. Tools and Technologies Used
+Python
+Pandas (for handling data)
+Scikit-learn (for machine learning model)
+Pickle (for saving the trained model)
+
+6. Dataset Description
+The dataset includes the following columns:
+Airline → represented using numbers
+Distance → flight distance in kilometers
+Weather → 0 for clear weather, 1 for bad weather
+Departure Delay → delay before takeoff in minutes
+Delayed → final output (0 = no delay, 1 = delay)
+
+The dataset was manually created, so it is small but structured in a way that reflects real-life situations.
+
+7. Model Description
+The model used in this project is Logistic Regression.
+It works by analyzing input values and predicting the probability of a delay. Based on this probability, it classifies the result into delayed or not delayed.
+I chose this model because it is simple, easy to understand, and suitable for this type of problem.
+
+8. Results and Discussion
+After training the model, I tested it with different inputs. The model was able to give reasonable predictions based on the values entered.
+For example, when the weather is bad and the departure delay is high, the model predicts that the flight will likely be delayed. This shows that the model is able to capture basic patterns from the dataset.
+Even though the dataset is small, the project clearly demonstrates how machine learning works.
+
+9. Challenges Faced
+While working on this project, I faced a few challenges:
+Creating a meaningful dataset manually
+Installing required libraries like pandas and scikit-learn
+Understanding how the model works
+Fixing errors while running the code
+
+These challenges helped me learn the practical side of working with machine learning.
+
+10. Limitations
+The dataset is not from real-world sources
+Only a few features are considered
+The accuracy is limited due to small dataset size
+
+11. Future Scope
+This project can be improved in many ways:
+Using real flight datasets
+Adding more features like time, airport traffic, and seasons
+Building a web interface for better user interaction
+Using advanced machine learning models
+
+12. Conclusion
+This project helped me understand how machine learning can be applied to predict flight delays. Even with a simple model, it is possible to make useful predictions.
+It also showed me how AI can be connected with aerospace applications. Overall, this project was a good learning experience and gave me practical exposure to machine learning.
+
+13. Learning Outcomes
+Through this project, I learned:
+Basics of machine learning
+How to work with datasets in Python
+Model training and prediction
+Problem-solving using AI
+Importance of structured approach
